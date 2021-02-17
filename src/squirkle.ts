@@ -1,4 +1,4 @@
-const maskContainerId = 'squircle-masks-container'
+const maskContainerId = 'squirkle-masks-container'
 
 function createMaskContainer(): SVGElement {
   const el = (document.getElementById(maskContainerId) as unknown) as SVGElement
