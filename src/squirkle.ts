@@ -59,9 +59,22 @@ function createMask(width: number, height: number, radius: number) {
 const resizeObserver = new ResizeObserver((entries) => {
   for (let i = 0; i < entries.length; i += 1) {
     const entry = entries[i]
-    console.log(entry)
+    const elm = entry.target as HTMLElement
+    processElm(elm)
   }
 })
+
+function processElm(elm: HTMLElement) {
+  const borderRadius = parseInt(
+    window.getComputedStyle(elm).getPropertyValue('border-radius'),
+    10
+  )
+
+  const { clientWidth: w, clientHeight: h } = elm
+  const maskId = createMask(w, h, borderRadius)
+  elm.style.clipPath = `url(#${maskId})`
+  ;(elm.style as any).WebkitClipPath = `url(#${maskId})`
+}
 
 export function squirklify(elms: HTMLElement | HTMLElement[]) {
   if (!elms) return
@@ -70,17 +83,7 @@ export function squirklify(elms: HTMLElement | HTMLElement[]) {
 
   for (let i = 0; i < targets.length; i += 1) {
     const elm = targets[i]
-
-    const borderRadius = parseInt(
-      window.getComputedStyle(elm).getPropertyValue('border-radius'),
-      10
-    )
-
-    const { clientWidth: w, clientHeight: h } = elm
-    const maskId = createMask(w, h, borderRadius)
-    elm.style.clipPath = `url(#${maskId})`
-    ;(elm.style as any).WebkitClipPath = `url(#${maskId})`
-
+    processElm(elm)
     resizeObserver.observe(elm)
   }
 }
