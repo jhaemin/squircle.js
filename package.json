@@ -11,7 +11,8 @@
     "build": "rimraf dist/* && parcel build src/index.ts --no-source-maps"
   },
   "files": [
-    "build"
+    "dist",
+    "images"
   ],
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
