@@ -25,7 +25,7 @@ In CSS, currently there is no such a spec for making squircles yet, and apparent
 ## Installation
 
 ```zsh
-npm i sqruicle.js
+npm i squircle.js
 ```
 
 ## API
