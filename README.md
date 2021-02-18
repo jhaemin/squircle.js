@@ -52,11 +52,12 @@ squirclify(Array.from(toBeSquircles))
 
 ## To Do
 
+- [ ] Demo website
 - [ ] React
 - [ ] Vue
 - [ ] Svelte
 - [ ] Garbage collect unused masks
-- [ ] Unobserve deleted DOMs
+- [ ] Unobserve removed DOMs
 
 ## License
 
