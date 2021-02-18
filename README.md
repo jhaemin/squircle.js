@@ -4,6 +4,12 @@
 
 <h3 align="center">Squircles for web</h3>
 
+<p align="center">
+  <a href="https://www.npmjs.com/package/squircle.js">
+    <img alt="npm" src="https://img.shields.io/npm/v/squircle.js?color=FF7B3F">
+  </a>
+</p>
+
 ## What is squircle?
 
 A squircle is a shape intermediate between a square and a circle. There are at least two definitions of "squircle" in use, the most common of which is based on the superellipse. The word "squircle" is a portmanteau of the words "square" and "circle". Squircles have been applied in design and optics. — [Wikipedia](https://en.wikipedia.org/wiki/Squircle)
