@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./images/banner.png" width="600" />
+  <img src="./images/banner.png" width="500" />
 </p>
 
 <h3 align="center">Squircles for web</h3>
@@ -9,7 +9,7 @@
 A squircle is a shape intermediate between a square and a circle. There are at least two definitions of "squircle" in use, the most common of which is based on the superellipse. The word "squircle" is a portmanteau of the words "square" and "circle". Squircles have been applied in design and optics. — [Wikipedia](https://en.wikipedia.org/wiki/Squircle)
 
 <p align="center">
-  <img src="./images/difference.png" width="500" />
+  <img src="./images/difference.png" width="600" />
 </p>
 
 ## Why squircle.js?
@@ -19,14 +19,38 @@ In CSS, currently there is no such a spec for making squircles yet, and apparent
 **squircle.js** automatically and dynamically generates squircle SVG path based on the element's size and its border radius.
 
 <p align="center">
-  <img src="./images/motion.gif" width="500" />
+  <img src="./images/motion.gif" width="300" />
 </p>
+
+## Installation
+
+```zsh
+npm i sqruicle.js
+```
+
+## API
+
+```ts
+import { squirclify } from 'squircle.js'
+
+const toBeSquirclies = document.querySelectorAll('.squircle')
+
+squirclify(Array.from(toBeSquirclies))
+```
 
 ## Limitations
 
 - It uses `SVGElement`. [Checkout browser compatibility](https://caniuse.com/?search=svg).
 - It uses CSS `clip-path`. [Checkout browser compatibility](https://caniuse.com/?search=clip-path).
 - Don't apply squircle to an element that resizes too many times.
+
+## To Do
+
+- [ ] React
+- [ ] Vue
+- [ ] Svelte
+- [ ] Garbage collect unused masks
+- [ ] Unobserve deleted DOMs
 
 ## License
 
