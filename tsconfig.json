@@ -2,10 +2,12 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
+    "outDir": "./build",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "lib": ["ES2015", "DOM"]
-  }
+  },
+  "include": ["src"]
 }
