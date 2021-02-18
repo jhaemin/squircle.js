@@ -1,3 +1,3 @@
-import { squirklify } from '../src'
+import { squirclify } from '../src'
 
-squirklify(document.querySelector('.box.squirkle') as HTMLElement)
+squirclify(document.querySelector('.box.squirkle') as HTMLElement)

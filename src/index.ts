@@ -1,4 +1,4 @@
-export { squirclify as squirklify } from './squircle'
+export { squirclify } from './squircle'
 ;(async () => {
   if ('ResizeObserver' in window === false) {
     // Loads polyfill asynchronously, only if required.
