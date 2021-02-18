@@ -1,8 +1,8 @@
 {
-  "name": "squirkle",
+  "name": "squircle.js",
   "version": "0.1.0",
   "description": "Squircles for web",
-  "repository": "https://github.com/payw-org/squirkle.git",
+  "repository": "https://github.com/payw-org/squircle.js.git",
   "author": "jhaemin",
   "license": "MIT",
   "main": "",

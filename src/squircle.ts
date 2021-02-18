@@ -1,4 +1,4 @@
-const maskContainerId = 'squirkle-masks-container'
+const maskContainerId = 'squircle-masks-container'
 
 function createMaskContainer(): SVGElement {
   const el = (document.getElementById(maskContainerId) as unknown) as SVGElement
@@ -76,7 +76,7 @@ function processElm(elm: HTMLElement) {
   ;(elm.style as any).WebkitClipPath = `url(#${maskId})`
 }
 
-export function squirklify(elms: HTMLElement | HTMLElement[]) {
+export function squirclify(elms: HTMLElement | HTMLElement[]) {
   if (!elms) return
 
   const targets = Array.isArray(elms) ? elms : [elms]
