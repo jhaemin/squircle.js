@@ -33,9 +33,9 @@ npm i sqruicle.js
 ```ts
 import { squirclify } from 'squircle.js'
 
-const toBeSquirclies = document.querySelectorAll('.squircle')
+const toBeSquircles = document.querySelectorAll('.squircle')
 
-squirclify(Array.from(toBeSquirclies))
+squirclify(Array.from(toBeSquircles))
 ```
 
 ## Limitations
