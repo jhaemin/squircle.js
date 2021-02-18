@@ -1,6 +1,14 @@
 {
+  "name": "squirkle",
+  "version": "0.1.0",
+  "description": "Squircles for web",
+  "repository": "https://github.com/payw-org/squirkle.git",
+  "author": "jhaemin",
+  "license": "MIT",
+  "main": "",
   "scripts": {
-    "dev": "parcel test/index.html"
+    "dev": "parcel test/index.html",
+    "build": "tsc"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
