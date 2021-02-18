@@ -65,4 +65,4 @@ It has built-in types since it is totally written in TypeScript.
 
 ## License
 
-MIT
+[MIT](./LICENSE)
