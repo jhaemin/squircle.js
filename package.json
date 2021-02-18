@@ -5,7 +5,7 @@
   "repository": "https://github.com/payw-org/squircle.js.git",
   "author": "jhaemin",
   "license": "MIT",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "parcel test/index.html",
     "build": "rimraf dist/* && parcel build src/index.ts --no-source-maps"
