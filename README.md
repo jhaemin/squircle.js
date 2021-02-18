@@ -44,6 +44,10 @@ const toBeSquircles = document.querySelectorAll('.squircle')
 squirclify(Array.from(toBeSquircles))
 ```
 
+### TypeScript
+
+It has built-in types since it is totally written in TypeScript.
+
 ## Limitations
 
 - It uses `SVGElement`. [Checkout browser compatibility](https://caniuse.com/?search=svg).
