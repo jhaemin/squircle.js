@@ -20,7 +20,7 @@ A squircle is a shape intermediate between a square and a circle. There are at l
 
 ## Why squircle.js?
 
-In CSS, currently there is no such a spec for making squircles yet, and apparently it's not possible with just `border-radius`. The most common solution to implement squircles in web is to mask elements with a squircle image or an SVG path like this [page](https://apps.apple.com/kr/app/%EB%B0%B0%EB%8B%AC%EC%9D%98%EB%AF%BC%EC%A1%B1/id378084485). Unfortunately these static masks are unchangeable and doesn't work responsively. Every time you have to manually create an image or generate one using some [tools](https://squircley.app).
+In CSS, currently there is no such a spec for making squircles yet, and apparently it's not possible with just `border-radius`. The most common solution to implement squircles in web is to mask elements with a squircle image or an SVG path like this [page](https://apps.apple.com/kr/app/%EB%B0%B0%EB%8B%AC%EC%9D%98%EB%AF%BC%EC%A1%B1/id378084485). Unfortunately these static masks are unchangeable and doesn't work responsively. You have to manually create an image or generate one using some [tools](https://squircley.app) every time you need.
 
 **squircle.js** automatically and dynamically generates squircle SVG path based on the element's size and its border radius.
 
