@@ -1,7 +1,7 @@
 const maskContainerId = 'squircle-masks-container'
 
 function createMaskContainer(): SVGElement {
-  const el = (document.getElementById(maskContainerId) as unknown) as SVGElement
+  const el = document.getElementById(maskContainerId) as unknown as SVGElement
 
   if (el) {
     return el
@@ -15,7 +15,7 @@ function createMaskContainer(): SVGElement {
 
   document.body.insertAdjacentHTML('beforeend', svg)
 
-  return (document.getElementById(maskContainerId) as unknown) as SVGElement
+  return document.getElementById(maskContainerId) as unknown as SVGElement
 }
 
 function createMask(width: number, height: number, radius: number) {
@@ -70,8 +70,13 @@ function processElm(elm: HTMLElement) {
     10
   )
 
-  const { clientWidth: w, clientHeight: h } = elm
-  const maskId = createMask(w, h, borderRadius)
+  const { clientWidth, clientHeight } = elm
+
+  if (clientWidth === 0 || clientHeight === 0) {
+    return
+  }
+
+  const maskId = createMask(clientWidth, clientHeight, borderRadius)
   elm.style.clipPath = `url(#${maskId})`
   ;(elm.style as any).WebkitClipPath = `url(#${maskId})`
 }
